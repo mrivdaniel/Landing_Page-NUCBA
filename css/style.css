@@ -11,6 +11,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 1px solid red;
 }
 
 html {
@@ -23,3 +24,81 @@ body {
 }
 /* fin de los seteos del css */
 
+/* dibujar las cajas, partiendo de la mas grande */
+
+ .body {
+    height: 100%;
+    display: flex;
+ }
+
+ .container {
+    width: 100%;
+    height: 15rem;
+ }
+
+
+ .header {
+    background-color: var(--navbar_footer);
+ }
+
+ .main {
+    background-color: var(--sections);
+ }
+
+ .aside {
+    background-color: var(--sections);
+ }
+
+ .footer {
+    background-color: var(--navbar_footer);
+ }
+/* ya se dan los estilos visuales a las cajas es util igual darle bordes rojos a todo por el tema visual de las cajas */
+
+
+/* comienzo con el navbar */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15rem;
+    gap: 3rem;
+}
+
+.header__figure {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__img {
+    width: 100%;
+    height: 15rem;
+}
+/* fin del navbar */
+
+/* inicio de main */
+ .main {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+ }
+
+ .main-container {
+    width: 100%;
+    display: flex;
+ }
+
+ .main-container__right {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .main-container__img {
+    width: 100%;
+    height: 100%;
+ }
