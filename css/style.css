@@ -1,0 +1,25 @@
+/* variables */
+:root {
+    --navbar_footer: hsl(101, 40%, 56%);
+    --sections: hsl(100, 79%, 71%);
+    --hover: hsl(101, 64%, 27%);
+    --action: hsl(100, 30%, 33%);
+    --fonts: hsl(100, 61%, 86%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+/* fin de los seteos del css */
+
