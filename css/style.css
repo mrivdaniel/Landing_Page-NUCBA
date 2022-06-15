@@ -38,14 +38,6 @@ body {
     height: 200px;
 }
 
-.main {
-    /* background-color: green; */
-}
-
-.footer {
-    /* background-color: yellow; */
-}
-
 .header {
     display: flex;
 }
