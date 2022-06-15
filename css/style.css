@@ -48,14 +48,6 @@ body {
     height: 200px;
 }
 
-.header__logo {
-    /* background-color: black; */
-}
-
-.nav {
-    /* background-color: red; */
-}
-
 .main {
     display: flex;
     flex-wrap: wrap;
@@ -215,6 +207,21 @@ body {
     background-color: var(--navbar_footer);
 }
 
+.main {
+    height: 1200px;
+}
+.cards {
+    width: 100%;
+    height: 1000px;
+}
+
+.designs {
+    background-color: red;
+    height: 200px;
+    width: 100%;
+}
+
+
 
 
 
@@ -226,7 +233,7 @@ body {
 /* media queries en 600px y 800px */
 @media (min-width: 600px) {
     .main {
-        height: 600px;
+        height: 800px;
     }
 
     .header__img {
@@ -247,8 +254,8 @@ body {
     }
 
     .cards {
-        height: 400px;
-        width: 600px;
+        height: 600px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
