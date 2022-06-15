@@ -4,7 +4,7 @@
     --sections: hsl(100, 79%, 71%);
     --hover: hsl(101, 64%, 27%);
     --action: hsl(100, 30%, 33%);
-    --fonts: hsl(100, 61%, 86%);
+    --fonts: hsl(0, 0%, 0%);
 }
 
 * {
@@ -116,6 +116,7 @@ body {
     text-decoration: none;
     color: var(--fonts);
     font-weight: 600;
+    border-bottom: 2px solid;
 }
 
 .nav__link:hover {
@@ -211,7 +212,7 @@ body {
 }
 
 .designs {
-    background-color: red;
+    background-color: var(--sections);
     height: 200px;
     width: 100%;
     display: flex;
