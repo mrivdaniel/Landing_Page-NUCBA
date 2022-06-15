@@ -24,111 +24,131 @@ body {
 
 /* fin de los seteos del css */
 
-/* inicio de la maquetacion por cajas */
-
-.sizing {
-    width: 100%;
-    height: 200px;
-}
-
+/* inicio de la maquetacion mas general */
 .body {
     display: flex;
     flex-wrap: wrap;
 }
 
+.header,
+.main,
+.footer {
+    width: 100%;
+    min-width: 150px;
+    height: 200px;
+}
+
 .main {
-    background-color: crimson;
+    background-color: green;
 }
 
 .footer {
-    background-color: rebeccapurple;
+    background-color: yellow;
 }
 
-/* fin de lo mas amplio */
-
-/* inicio del header */
 .header {
     display: flex;
-    background-color: var(--navbar_footer);
+}
+
+.header__logo,
+.nav {
+    width: 100%;
+    height: 200px;
 }
 
 .header__logo {
-    width: 100%;
+    background-color: black;
 }
 
 .nav {
-    width: 100%;
+    background-color: red;
 }
 
-/* inicio del navbar */
-.nav {
-    width: 100%;
+.main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+    height: 1000px;
 }
 
-.nav__link {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--fonts);
-}
-
-.nav__link:hover {
-    background-color: var(--hover);
-    border: 2px solid white;
-    border-radius: 1rem;
-    padding: 0.3rem;
-}
-
-.header__logo {
+.inicio,
+.cards {
     width: 100%;
+    height: 200px;
+}
+
+.cards {
+    height: 800px;
+}
+
+.inicio {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.header__img {
-    width: 50px;
-    height: 50px;
+.inicio__left,
+.inicio__right {
+    width: 100%;
+    height: 200px;
 }
 
-/* fin del header */
-/* inicio del main */
+.inicio__left {
+    background-color: crimson;
+}
 
+.inicio__right {
+    background-color: chartreuse;
+}
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.card__one,
+.card__two,
+.card__three,
+.card__four {
+    width: 100%;
+    height: 200px;
+}
 
+.card__one {
+    background-color: darkmagenta;
+}
 
+.card__two {
+    background-color: blue;
+}
 
+.card__three {
+    background-color: cornflowerblue;
+}
 
-
-
-
+.card__four {
+    background-color: crimson;
+}
 
 @media (min-width: 600px) {
-    .header__img {
-        width: 100px;
-        height: 100px;
-    }
-    .nav {
-        flex-direction: row;
+    .main {
+        height: 600px;
     }
 
-    .info__img {
-        max-width: 300px;
-        max-height: 300px;
+    .cards {
+        height: 400px;
+    }
+
+    .card__one,
+    .card__two,
+    .card__three,
+    .card__four {
+        width: 50%;
     }
 }
 
 @media (min-width: 800px) {
-    .header__img {
-        width: 200px ;
-    }
 
-    .nav {
-        gap: 8rem;
+    .body {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
