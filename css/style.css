@@ -39,11 +39,11 @@ body {
 }
 
 .main {
-    background-color: green;
+    /* background-color: green; */
 }
 
 .footer {
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .header {
@@ -57,11 +57,11 @@ body {
 }
 
 .header__logo {
-    background-color: black;
+    /* background-color: black; */
 }
 
 .nav {
-    background-color: red;
+    /* background-color: red; */
 }
 
 .main {
@@ -91,11 +91,11 @@ body {
 }
 
 .inicio__left {
-    background-color: crimson;
+    /* background-color: crimson; */
 }
 
 .inicio__right {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 
 .cards {
@@ -112,24 +112,110 @@ body {
 }
 
 .card__one {
-    background-color: darkmagenta;
+    /* background-color: darkmagenta; */
 }
 
 .card__two {
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .card__three {
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
 }
 
 .card__four {
-    background-color: crimson;
+    /* background-color: crimson; */
 }
 
+/* fin de la maquetacion general */
+/* inicio del header */
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--fonts);
+    font-weight: 600;
+}
+
+.nav__link:hover {
+    background-color: var(--hover);
+    border-radius: 1rem;
+    padding: .6rem;
+}
+
+.nav__link:active {
+    color: crimson;
+}
+
+.header {
+    background-color: var(--navbar_footer);
+}
+/* fin del header */
+/* inicio del main */
+.main {
+    background-color: var(--sections);
+}
+
+.inicio__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* fin del main */
+/* inicio del footer */
+.footer {
+    background-color: var(--navbar_footer);
+}
+
+
+
+
+
+
+
+
+
+/* media queries en 600px y 800px */
 @media (min-width: 600px) {
     .main {
         height: 600px;
+    }
+
+    .header__img {
+        max-width: 70%;
+        max-height: 70%;
+        margin-right: auto;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: .4rem;
     }
 
     .cards {
@@ -150,5 +236,10 @@ body {
         width: 800px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .header__img {
+        max-width: 80%;
+        min-height: 80%;
     }
 }
