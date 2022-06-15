@@ -90,14 +90,6 @@ body {
     height: 200px;
 }
 
-.inicio__left {
-    /* background-color: crimson; */
-}
-
-.inicio__right {
-    /* background-color: chartreuse; */
-}
-
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -111,21 +103,6 @@ body {
     height: 200px;
 }
 
-.card__one {
-    /* background-color: darkmagenta; */
-}
-
-.card__two {
-    /* background-color: blue; */
-}
-
-.card__three {
-    /* background-color: cornflowerblue; */
-}
-
-.card__four {
-    /* background-color: crimson; */
-}
 
 /* fin de la maquetacion general */
 /* inicio del header */
@@ -167,7 +144,7 @@ body {
     background-color: var(--navbar_footer);
 }
 /* fin del header */
-/* inicio del main */
+/* inicio del main en su primera seccion */
 .main {
     background-color: var(--sections);
 }
@@ -180,7 +157,61 @@ body {
     text-align: center;
 }
 
+.inicio__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio__img {
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+/* fin de la primera seccion */
+/* inicio de cards */
+.card__one {
+    text-align: center;
+}
+.img__one {
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 1rem;
+}
 
+.card__two {
+    text-align: center;
+}
+.img__two {
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 1rem;
+}
+.card__three {
+    text-align: center;
+}
+.img__three {
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 1rem;
+}
+
+.card__four {
+    text-align: center;
+}
+.img__four {
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 1rem;
+}
 
 
 
@@ -212,6 +243,11 @@ body {
         margin-right: auto;
     }
 
+    .inicio__img {
+        width: 600px;
+        height: 600px;
+    }
+
     .nav {
         flex-direction: row;
         justify-content: space-around;
@@ -220,6 +256,9 @@ body {
 
     .cards {
         height: 400px;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .card__one,
